@@ -1,0 +1,56 @@
+/* Basic styles for the communal room website */
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+color: #333;
+}
+
+header,
+main,
+footer {
+max-width: 800px;
+margin: 1em auto;
+padding: 1em;
+}
+
+header {
+text-align: center;
+background: #fff;
+padding: 2em;
+border-bottom: 1px solid #ddd;
+}
+
+h1, h2 {
+margin-top: 0;
+}
+
+.gallery-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1em;
+margin-bottom: 1em;
+}
+
+.gallery-container img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+section {
+background: #fff;
+margin-bottom: 1em;
+padding: 1em;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+text-align: center;
+font-size: 0.9em;
+color: #777;
+border-top: 1px solid #ddd;
+}
