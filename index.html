@@ -100,3 +100,29 @@
 
     
   </script>
+
+  <!-- Include marked.js library from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Get the Markdown text from the script tag
+      const markdownScript = document.getElementById('markdown-content');
+      const markdownText = markdownScript.textContent;
+
+      // 2. Get the target container
+      const rulesContainer = document.getElementById('rules-container');
+
+      // 3. Convert Markdown to HTML using marked.js
+      const htmlContent = marked.parse(markdownText);
+
+      // 4. Insert the HTML into the container
+      rulesContainer.innerHTML = htmlContent;
+
+      // Optionally remove the markdown script tag after processing (if you don't need it in the DOM)
+      // markdownScript.remove();
+    });
+  </script>
+</body>
+
+</html>
