@@ -1,41 +1,102 @@
-<main>
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <h2>Room Gallery</h2>
-    <div class="gallery-container">
-      <img src="images/1.jpg" alt="Felles Rom Image 1" />
-      <img src="images/2.jpg" alt="Felles Rom Image 2" />
-      <img src="images/3.jpg" alt="Felles Rom Image 3" />
-      <img src="images/4.jpg" alt="Felles Rom Image 4" />
-      <img src="images/5.jpg" alt="Felles Rom Image 5" />
-    </div>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
 
-  <section id="rules">
-    <h2>Retningslinjer for bruk av fellesområdet</h2>
-    <div id="rules-container"></div>
-  </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    /* Basic CSS for styling (optional) */
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
 
-  <!-- Booking Links Section -->
-  <section id="booking">
-    <h2>Booking Links</h2>
-    <ul>
-      <li>
-        <a href="https://calendar.app.google/eWrH2QZzDL5CdZ3MA" target="_blank" rel="noopener noreferrer">
-          Booking for beboere
-        </a>
-      </li>
-      <li>
-        <a href="https://calendar.app.google/SGRC9rb6rfhpcgFd6" target="_blank" rel="noopener noreferrer">
-          Booking for andre aktører for årsmøte
-        </a>
-      </li>
-    </ul>
-  </section>
-</main>
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+    }
 
-<footer>
-  <p>&copy; Kuben Sameie .</p>
-</footer>
+    section {
+      margin-bottom: 30px;
+    }
 
-<script id="markdown-content" type="text/markdown">
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .gallery-container {
+      display: grid;
+      /* Change to CSS Grid */
+      grid-template-columns: repeat(2, 1fr);
+      /* Create 2 columns of equal width */
+      gap: 10px;
+      /* Add some gap between images */
+      /* Remove overflow-x: auto; as we are using grid layout now */
+    }
+
+    .gallery-container img {
+      max-width: 100%;
+      /* Adjust image max-width to fit within grid columns */
+      height: auto;
+    }
+
+    /* Keep height auto for aspect ratio */
+    #rules-container {
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    /* Style the rules container */
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Room Gallery</h2>
+      <div class="gallery-container">
+        <img src="images/1.jpg" alt="Felles Rom Image 1" />
+        <img src="images/2.jpg" alt="Felles Rom Image 2" />
+        <img src="images/3.jpg" alt="Felles Rom Image 3" />
+        <img src="images/4.jpg" alt="Felles Rom Image 4" />
+        <img src="images/5.jpg" alt="Felles Rom Image 5" />
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2>Retningslinjer for bruk av fellesområdet</h2>
+      <div id="rules-container"></div>
+    </section>
+
+    <!-- Booking Links Section -->
+    <section id="booking">
+      <h2>Booking Links</h2>
+      <ul>
+        <li>
+          <a href="https://calendar.app.google/eWrH2QZzDL5CdZ3MA" target="_blank" rel="noopener noreferrer">
+            Booking for beboere
+          </a>
+        </li>
+        <li>
+          <a href="https://calendar.app.google/SGRC9rb6rfhpcgFd6" target="_blank" rel="noopener noreferrer">
+            Booking for andre aktører for årsmøte
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Kuben Sameie .</p>
+  </footer>
+
+  <script id="markdown-content" type="text/markdown">
+    ## Retningslinjer for bruk av fellesområdet
+    Velkommen til fellesområdet i Kuben Sameie! For å sikre et hyggelig og ordentlig miljø for alle beboere og gjester, ber vi deg vennligst om å lese og følge disse retningslinjene under ditt opphold.
+
+    ### Praktisk Informasjon
+
+    
+  </script>
