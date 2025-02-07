@@ -62,7 +62,12 @@
         <img src="images/3.jpg" alt="Felles Rom Image 3" />
         <img src="images/4.jpg" alt="Felles Rom Image 4" />
         <img src="images/5.jpg" alt="Felles Rom Image 5" />
+        <img src="images/6.jpg" alt="Felles Rom Image 6" />
       </div>
+    </section>
+
+    <section id="info">
+      <div id="info-container"></div>
     </section>
 
     <section id="rules">
@@ -91,6 +96,10 @@
     <p>Kuben Sameie</p>
   </footer>
 
+  <script id="markdown-content-info" type="text/markdown">
+## Beskrivels av fellesrommet
+Fellesområdet i Kuben Sameie tilbyr rikelig med plass for inntil 40 personer. Fasilitetene inkluderer en kaffetrakter, et fullverdig bad, og et kjøkken som er utstyrt for å servere måltider til opptil 20 personer.
+  </script>
   <script id="markdown-content" type="text/markdown">
 ## Retningslinjer for bruk av fellesområdet
 Velkommen til fellesområdet i Kuben Sameie! For å sikre et hyggelig og ordentlig miljø for alle beboere og gjester, ber vi deg vennligst om å lese og følge disse retningslinjene under ditt opphold.
@@ -129,8 +138,8 @@ Minner om at dette er et innerom, sko skal dermed ikke benyttes inne i lokalet.
 
 **Områder som skal rengjøres:**
 - Hele området: Dette inkluderer alle gulv, overflater, bord og stoler i fellesområdet.
-- Bad: Vennligst rengjør toalett, vask, speil og gulv på badet.
-- Kjøkken: Vennligst rengjør oppvaskkum, benkeplater, komfyr/kokeplater, og alle andre kjøkkenapparater som har blitt brukt. Tøm søppelbøtten på kjøkkenet.
+- Bad: Rengjør toalett, vask, speil og gulv på badet.
+- Kjøkken: Rengjør oppvaskkum, benkeplater, komfyr/kokeplater, og alle andre kjøkkenapparater som har blitt brukt. Alt av bestikk og service skal være vasket og plassert tilbake i hyllene. Tøm søppelbøtten på kjøkkenet.
 
 ### Søppelhåndtering og kildesortering
 Vennligst bruk søppelbøttene som er tilgjengelige og sørg for å kildesortere avfallet i henhold til anvisningene fra BIR. Tøm søppelbøttene ved utsjekk.
@@ -175,6 +184,22 @@ Vi setter stor pris på din hjelp til å holde fellesområdet rent og hyggelig f
 
       // Optionally remove the markdown script tag after processing (if you don't need it in the DOM)
       // markdownScript.remove();
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Get the Markdown text from the script tag
+      const markdownScript = document.getElementById('markdown-content-info');
+      const markdownText = markdownScript.textContent;
+
+      // 2. Get the target container
+      const rulesContainer = document.getElementById('info-container');
+
+      // 3. Convert Markdown to HTML using marked.js
+      const htmlContent = marked.parse(markdownText);
+
+      // 4. Insert the HTML into the container
+      rulesContainer.innerHTML = htmlContent;
     });
   </script>
 </body>
