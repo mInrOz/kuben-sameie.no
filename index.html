@@ -1,227 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lei fellesrom eller paddleboards i Kuben Sameie. Se priser, booking og retningslinjer.">
   <title>Kuben Sameie</title>
-  <style>
-    /* Basic CSS for styling (optional) */
-    body {
-      font-family: sans-serif;
-      margin: 20px;
-    }
-
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    section {
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      margin-bottom: 15px;
-    }
-
-    .gallery-container {
-      display: grid;
-      /* Change to CSS Grid */
-      grid-template-columns: repeat(2, 1fr);
-      /* Create 2 columns of equal width */
-      gap: 10px;
-      /* Add some gap between images */
-      /* Remove overflow-x: auto; as we are using grid layout now */
-    }
-
-    .gallery-container img {
-      max-width: 100%;
-      /* Adjust image max-width to fit within grid columns */
-      height: auto;
-    }
-
-    /* Keep height auto for aspect ratio */
-    #rules-container {
-      padding: 15px;
-      border: 1px solid #ccc;
-    }
-
-    /* Style the rules container */
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <main>
-    <!-- Gallery Section -->
-    <section id="gallery">
-      <h2>Kuben Sameie Fellesrom</h2>
-      <div class="gallery-container">
-        <img src="images/1.jpg" alt="Felles Rom Image 1" />
-        <img src="images/2.jpg" alt="Felles Rom Image 2" />
-        <img src="images/3.jpg" alt="Felles Rom Image 3" />
-        <img src="images/4.jpg" alt="Felles Rom Image 4" />
-        <img src="images/5.jpg" alt="Felles Rom Image 5" />
-        <img src="images/6.jpg" alt="Felles Rom Image 6" />
-      </div>
-    </section>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">Kuben Sameie</a>
+      <nav class="site-nav" aria-label="Hovednavigasjon">
+        <a href="#oversikt">Oversikt</a>
+        <a href="#fellesrom">Fellesrom</a>
+        <a href="#paddleboards">Paddleboards</a>
+      </nav>
+    </header>
 
-    <section id="info">
-      <div id="info-container"></div>
-    </section>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Utleie i Kuben Sameie</p>
+          <h1>Utleie av fellesrom og paddleboards</h1>
+          <p class="hero-lead">Her finner du priser, bookinglenker og retningslinjer for utleie i Kuben Sameie.</p>
 
-    <section id="rules">
-      <div id="rules-container"></div>
-    </section>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#oversikt">Se priser og booking</a>
+            <a class="button button-secondary" href="#fellesrom-booking">Book fellesrom</a>
+          </div>
 
-    <!-- Booking Links Section -->
-    <section id="booking">
-      <h2>Booking Linker</h2>
-      <ul>
-        <li>
-          <a href="https://calendar.app.google/eWrH2QZzDL5CdZ3MA" target="_blank" rel="noopener noreferrer">
-            Booking for beboere
-          </a>
-        </li>
-        <li>
-          <a href="https://calendar.app.google/SGRC9rb6rfhpcgFd6" target="_blank" rel="noopener noreferrer">
-            Booking for årsmøte av andre aktører
-          </a>
-        </li>
-      </ul>
-    </section>
-  </main>
+        </div>
 
-  <footer>
-    <p>Kuben Sameie</p>
-  </footer>
+        <div class="hero-visual">
+          <img class="hero-main-image" src="images/1.jpg" width="1024" height="576" fetchpriority="high" alt="Fellesrommet i Kuben Sameie">
+          <div class="hero-mini-card">
+            <img src="images/paddleboards.jpeg" width="1200" height="1600" loading="lazy" alt="Paddleboards tilgjengelig for utleie">
+            <div>
+              <p>Paddleboards</p>
+              <strong>Paddleboards til utleie</strong>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <script id="markdown-content-info" type="text/markdown">
-## Beskrivelse av fellesrommet
-Fellesområdet i Kuben Sameie tilbyr rikelig med plass for inntil 40 personer. Fasilitetene inkluderer en kaffetrakter, et fullverdig bad, og et kjøkken som er utstyrt for å servere måltider til opptil 20 personer.
-Linker for booking av fellesrommet finner du nederst på siden, les retningslinjer for bruk av fellesrommet før du booker. 
+      <section id="oversikt" class="section-block overview-section">
+        <div class="section-intro">
+          <p class="section-kicker">Oversikt</p>
+          <h2>Priser og booking</h2>
+          <p>Oversikten under viser pris, leieperiode og hva de ulike tilbudene passer for.</p>
+        </div>
 
-**OBS** booking går fra kl 14:00 til kl 12:00 dagen etter, booker du feks Fredagen, så får du tilgang til rommet fra kl 14:00 Fredag til kl 12:00 Lørdag.
+        <div class="overview-grid">
+          <article class="overview-card overview-card-room">
+            <div class="overview-card-copy">
+              <p class="card-tag">Innendørs</p>
+              <h3>Fellesrom</h3>
+              <p>For samlinger, overnatting, beboermøter og årsmøter.</p>
+              <ul class="fact-list">
+                <li><strong>Beboerpris:</strong> 800 kr per booking</li>
+                <li><strong>Ekstern pris:</strong> 3000 kr</li>
+                <li><strong>Varighet:</strong> kl. 14:00 til 12:00 dagen etter</li>
+                <li><strong>Passer for:</strong> opptil ca. 40 personer</li>
+              </ul>
+            </div>
+            <div class="overview-card-actions">
+              <a class="button button-primary" href="#fellesrom">Se fellesrom</a>
+            </div>
+          </article>
 
-**Fellesrommet tilbyr:**
-- Plass til inntil 40 personer
-- Fullt utstyrt kjøkken og kaffetrakter
-- Eget bad/toalett
-- Lys og moderne atmosfære med nydelig utsikt
-- To store spisebord og ekstra stoler
-- Hyggelig sofakrok
-- Stor 75-tommers TV-skjerm og Wi-Fi
+          <article class="overview-card overview-card-board">
+            <div class="overview-card-copy">
+              <p class="card-tag">Utendørs</p>
+              <h3>Paddleboards</h3>
+              <p>For korte turer på vannet i nærområdet.</p>
+              <ul class="fact-list">
+                <li><strong>Pris:</strong> 100 kr</li>
+                <li><strong>Varighet:</strong> 2 timer</li>
+                <li><strong>Booking:</strong> ett brett per tidsrom</li>
+                <li><strong>Passer for:</strong> korte turer i nærområdet</li>
+              </ul>
+            </div>
+            <div class="overview-card-actions">
+              <a class="button button-primary" href="#paddleboards">Se paddleboards</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-## Fellesrom Kuben kan leies for årsmøte eller beboermøte for sameier i Damsgårdsundet
-**Pris for leie:** 3000 kroner.
+      <section id="fellesrom" class="section-block offer-section">
+        <div class="section-intro split-intro">
+          <div>
+            <p class="section-kicker">Fellesrom</p>
+            <h2>Kuben Sameie Fellesrom</h2>
+            <p>Fellesrom med kjøkken, bad, TV og plass til møter, samlinger og overnatting for beboere.</p>
+          </div>
+          <div class="stat-strip">
+            <article>
+              <strong>800 kr</strong>
+              <span>Beboerbooking</span>
+            </article>
+            <article>
+              <strong>3000 kr</strong>
+              <span>Årsmøte / møteaktivitet</span>
+            </article>
+            <article>
+              <strong>Opptil 40</strong>
+              <span>Personer</span>
+            </article>
+          </div>
+        </div>
 
-**Formål:** Fellesrommet leies bare ut for årsmøter, eller annen møteaktivitet for andre aktører en beboere i Kuben Sameie.
+        <div class="gallery-grid gallery-grid-room">
+          <a href="#lightbox-1"><img src="images/1.jpg" width="1024" height="576" loading="lazy" alt="Fellesrommet i Kuben Sameie, bilde 1"></a>
+          <a href="#lightbox-2"><img src="images/2.jpg" width="1024" height="576" loading="lazy" alt="Fellesrommet i Kuben Sameie, bilde 2"></a>
+          <a href="#lightbox-3"><img src="images/3.jpg" width="1024" height="576" loading="lazy" alt="Fellesrommet i Kuben Sameie, bilde 3"></a>
+          <a href="#lightbox-4"><img src="images/4.jpg" width="1024" height="576" loading="lazy" alt="Fellesrommet i Kuben Sameie, bilde 4"></a>
+          <a href="#lightbox-5"><img src="images/5.jpg" width="1024" height="576" loading="lazy" alt="Fellesrommet i Kuben Sameie, bilde 5"></a>
+          <a href="#lightbox-6"><img src="images/6.jpg" width="1024" height="576" loading="lazy" alt="Fellesrommet i Kuben Sameie, bilde 6"></a>
+        </div>
 
-**MERK:** Retningslinjer gjelder for bruk gjelder for alle leietakere. Les og følg retningslinjene for bruk av fellesområdet.
+        <div class="two-column-layout">
+          <div class="stack-column">
+            <article class="panel">
+              <h3>Fasiliteter</h3>
+              <p>Fellesområdet i Kuben Sameie tilbyr rikelig med plass for inntil 40 personer. Fasilitetene inkluderer kaffetrakter, et fullverdig bad og et kjøkken som er utstyrt for å servere måltider til opptil 20 personer.</p>
+              <ul class="feature-grid">
+                <li>Plass til inntil 40 personer</li>
+                <li>Fullt utstyrt kjøkken og kaffetrakter</li>
+                <li>Eget bad/toalett</li>
+                <li>Lys og moderne atmosfære med nydelig utsikt</li>
+                <li>To store spisebord og ekstra stoler</li>
+                <li>Hyggelig sofakrok</li>
+                <li>Stor 75-tommers TV-skjerm og Wi-Fi</li>
+                <li>2 sovesofaer for overnatting for beboere</li>
+              </ul>
+            </article>
 
-  </script>
-  <script id="markdown-content" type="text/markdown">
-## Retningslinjer for bruk av fellesområdet
-Velkommen til fellesområdet i Kuben Sameie! For å sikre et hyggelig og ordentlig miljø for alle beboere og gjester, ber vi deg vennligst om å lese og følge disse retningslinjene under ditt opphold.
+            <article class="panel panel-soft">
+              <h3>Pris og leieperiode</h3>
+              <ul class="fact-list">
+                <li><strong>Beboere:</strong> 800 kroner per booking</li>
+                <li><strong>Andre aktører:</strong> 3000 kroner for årsmøter eller annen møteaktivitet</li>
+                <li><strong>Tilgang:</strong> fra kl. 14:00 til kl. 12:00 dagen etter</li>
+              </ul>
+              <p>Booker du for eksempel fredag, får du tilgang til rommet fra kl. 14:00 fredag til kl. 12:00 lørdag.</p>
+            </article>
+          </div>
 
-### Praktisk Informasjon
-**Innsjekk og utsjekk:** Innsjekk er fra kl. 14:00, og utsjekk er senest kl. 12:00 neste dag.
+          <aside id="fellesrom-booking" class="booking-panel">
+            <p class="card-tag">Booking</p>
+            <h3>Book fellesrom</h3>
+            <p>Velg booking for beboere eller booking for årsmøte og eksterne aktører.</p>
 
-**Rapportering av skader ved ankomst:** Ved ankomst, vennligst gjør en rask sjekk av fellesområdet for å se etter eventuelle eksisterende skader eller mangler. Vennligst rapporter eventuelle problemer umiddelbart til styret via BOB Portalen. Dette hjelper oss å sikre at området holdes i god stand for alle.
+            <div class="booking-buttons">
+              <a class="button button-primary" href="https://calendar.app.google/eWrH2QZzDL5CdZ3MA" target="_blank" rel="noopener noreferrer">Book fellesrom som beboer</a>
+              <a class="button button-secondary" href="https://calendar.app.google/SGRC9rb6rfhpcgFd6" target="_blank" rel="noopener noreferrer">Book for årsmøte / eksterne</a>
+            </div>
 
-**Fasiliteter:** Toalettpapir og tørkepapir er inkludert. Rengjøringsmateriell er også tilgjengelig i området, men utover dette må gjester selv sørge for nødvendige forbruksartikler.
+            <ul class="notice-list">
+              <li>Ingen refusjon av betalt booking</li>
+              <li>Les retningslinjene før booking</li>
+              <li>Manglende utvask faktureres med 1000 kr</li>
+            </ul>
+          </aside>
+        </div>
 
-**Overnatting (kun for beboere):** Overnatting i fellesområdet er tillatt. Det finnes 2 sovesofaer tilgjengelig for overnatting. Leietager må stille med sengetøy (laken + dynetrekk), det er tilgjengelig to stk dyne og pute.
+        <div class="rules-layout">
+          <article class="panel">
+            <h3>Bruk</h3>
+            <p>Fellesrommet kan brukes til arrangementer og samlinger av en karakter man også ville vært komfortabel med å holde i sin egen leilighet. Det kan også leies til årsmøter og annen møteaktivitet for andre aktører enn beboere i Kuben Sameie, for eksempel sameier i Damsgårdsundet.</p>
+          </article>
 
-### Husregler og bruk av området
-**Generelle husregler:** De vanlige husreglene for Kuben Sameie gjelder også for fellesområdet.
-Minner om at dette er et innerom, sko skal dermed ikke benyttes inne i lokalet. 
+          <article class="panel rules-panel">
+            <h3>Retningslinjer</h3>
 
-**Nattero:** For å sikre nattero for alle beboere, ber vi om at det skal være stille i fellesområdet etter klokken 23:00. Vennligst unngå høylytt støy, musikk, og høylytte samtaler etter dette tidspunktet.
+            <details open>
+              <summary>Praktisk informasjon</summary>
+              <div class="details-content">
+                <p><strong>Innsjekk og utsjekk:</strong> Innsjekk er fra kl. 14:00, og utsjekk er senest kl. 12:00 neste dag.</p>
+                <p><strong>Rapportering av skader ved ankomst:</strong> Gjør en rask sjekk av fellesområdet ved ankomst og rapporter eventuelle skader eller mangler umiddelbart til styret via BOB Portalen.</p>
+                <p><strong>Fasiliteter:</strong> Toalettpapir, tørkepapir og rengjøringsmateriell er tilgjengelig. Utover dette må gjester selv sørge for nødvendige forbruksartikler.</p>
+                <p><strong>Overnatting (kun for beboere):</strong> Det finnes 2 sovesofaer. Leietager må stille med sengetøy (laken + dynetrekk). Det er tilgjengelig to dyner og puter.</p>
+                <p><strong>Tilgang:</strong> Tilgang til fellesområdet vil bli gitt via en digital nøkkel i Unlock-appen.</p>
+              </div>
+            </details>
 
-**Antall gjester:** Det er ingen fast øvre grense for antall gjester, men vi ber om at antallet holdes på et rimelig nivå som passer til formålet med bruken og lokalets størrelse. For de fleste anledninger vil et maks antall på rundt 30 personer være passende. Vennligst vurder kapasiteten ut ifra behov.
+            <details>
+              <summary>Husregler og hensyn</summary>
+              <div class="details-content">
+                <p>De vanlige husreglene for Kuben Sameie gjelder også for fellesområdet.</p>
+                <ul class="fact-list compact-list">
+                  <li>Sko skal ikke benyttes inne i lokalet.</li>
+                  <li>Det skal være stille i fellesområdet etter klokken 23:00.</li>
+                  <li>Vis hensyn til andre beboere også før kl. 23:00.</li>
+                  <li>Røyking er ikke tillatt innendørs. Røyking utendørs skal ikke skje i nærheten av hovedinngangen, og sneiper kastes i egnet beholder.</li>
+                  <li>Vennligst vis måtehold ved eventuell alkoholbruk.</li>
+                  <li>Antall gjester må holdes på et rimelig nivå. Rundt 30 personer vil ofte være passende.</li>
+                </ul>
+              </div>
+            </details>
 
-**Formål med bruk:** Fellesområdet er ment for bruk til arrangementer og samlinger som er av en karakter man også ville vært komfortabel med å holde i sin egen leilighet. Vennligst unngå arrangementer som kan være til sjenanse for andre beboere eller som går utover normal bruk av et fellesområde.
+            <details>
+              <summary>Rengjøring og søppelhåndtering</summary>
+              <div class="details-content">
+                <p><strong>Etter bruk:</strong> Fellesområdet skal rengjøres grundig og etterlates i samme stand som ved ankomst, eller bedre.</p>
+                <p><strong>Mangelfull vask:</strong> Er det ikke vasket tilfredsstillende vil det tilfalle et gebyr på 1000 kr.</p>
+                <ul class="fact-list compact-list">
+                  <li>Hele området: gulv, overflater, bord og stoler</li>
+                  <li>Bad: toalett, vask, speil og gulv</li>
+                  <li>Kjøkken: oppvaskkum, benkeplater, komfyr/kokeplater og brukt utstyr. Alt av bestikk og service skal være vasket og plassert tilbake i hyllene.</li>
+                  <li>Tøm søppelbøtter og kildesorter i henhold til BIR</li>
+                </ul>
+              </div>
+            </details>
 
-**Musikk og lydnivå:** Vis hensyn til andre beboere angående musikk og lydnivå også før kl. 23:00. Unngå høylytt musikk og støy som kan forstyrre naboer.
+            <details>
+              <summary>Ansvar og sikkerhet</summary>
+              <div class="details-content">
+                <p>Gjester er ansvarlige for eventuelle skader som oppstår i fellesområdet utover normal slitasje.</p>
+                <p>Sameiet er ikke ansvarlig for personlige eiendeler som blir etterlatt.</p>
+                <p>Respekter brannsikkerhetsreglene. Ikke blokker rømningsveier og ikke manipuler brannalarmer. Festrøyk innendørs er ikke tillatt.</p>
+                <p>Ved brudd på retningslinjene kan det påløpe et gebyr på 1000 NOK. Ved gjentatte eller alvorlige brudd kan bruken av fellesområdet suspenderes.</p>
+                <p><strong>Nødnummer:</strong> Politi 112, Brann 110, Ambulanse 113. Etter en eventuell nødsituasjon må det meldes inn til styret via BOB Portalen eller mail til kuben@mittbob.no.</p>
+              </div>
+            </details>
+          </article>
+        </div>
+      </section>
 
-**Røyking:** Røyking er ikke tillatt innendørs i fellesområdet. Dersom du ønsker å røyke, vennligst gjør dette utendørs, men ikke i nærheten av hovedinngangen til bygget. Husk å rydde opp etter deg og kast sneiper i egnet beholder.
+      <section id="paddleboards" class="section-block offer-section offer-section-board">
+        <div class="section-intro split-intro">
+          <div>
+            <p class="section-kicker">Paddleboards</p>
+            <h2>Paddleboards</h2>
+            <p>Utleie av paddleboards for korte turer i nærområdet.</p>
+          </div>
+          <div class="stat-strip">
+            <article>
+              <strong>100 kr</strong>
+              <span>Per booking</span>
+            </article>
+            <article>
+              <strong>2 timer</strong>
+              <span>Leieperiode</span>
+            </article>
+            <article>
+              <strong>Eget ansvar</strong>
+              <span>Bruk og sikkerhet</span>
+            </article>
+          </div>
+        </div>
 
-**Alkohol:** Vennligst vis måtehold ved eventuell alkoholbruk
+        <div class="board-layout">
+          <div class="board-media panel panel-image">
+            <a href="#lightbox-7"><img src="images/paddleboards.jpeg" width="1200" height="1600" loading="lazy" alt="Paddleboards klare for utleie i Kuben Sameie"></a>
+          </div>
 
-### Tilgang til området
-**Digital nøkkel:** Tilgang til fellesområdet vil bli gitt via en digital nøkkel i "Unlock"-appen.
+          <div class="stack-column">
+            <article class="panel">
+              <h3>Om utleien</h3>
+              <p>Kuben Sameie tilbyr utleie av paddleboards for korte turer på vannet i nærområdet.</p>
+              <ul class="fact-list">
+                <li><strong>Pris:</strong> 100 kroner for 2 timer</li>
+                <li><strong>Booking:</strong> i 2 timers intervaller</li>
+                <li><strong>Oppmøte:</strong> møt opp til booket tid slik at neste booking kan starte som planlagt</li>
+                <li><strong>Tilbakelevering:</strong> utstyret leveres tilbake i samme stand som ved henting</li>
+              </ul>
+            </article>
 
-### Rengjøring
-**Etter bruk:** Etter endt leieperiode er det gjestens ansvar å rengjøre fellesområdet grundig. Dette innebærer å etterlate området i samme stand som det var ved ankomst, eller bedre.
-**Er det ikke vasket tilfredsstillende vil det tilfalle et gebyr på 1000kr.**
+            <aside class="booking-panel compact-booking-panel">
+              <p class="card-tag">Booking</p>
+              <h3>Book paddleboards</h3>
+              <p>Bruk lenken under for booking.</p>
+              <div class="booking-buttons">
+                <a class="button button-primary" href="https://calendar.app.google/uq5MDesfVEKW6fqx9" target="_blank" rel="noopener noreferrer">Book paddleboards</a>
+              </div>
+              <ul class="notice-list">
+                <li>Sjekk vær, vind og forhold før bruk</li>
+                <li>Meld fra om skader eller mangler via BOB Portalen</li>
+                <li>Bruk skjer på eget ansvar</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
 
-**Områder som skal rengjøres:**
-- Hele området: Dette inkluderer alle gulv, overflater, bord og stoler i fellesområdet.
-- Bad: Rengjør toalett, vask, speil og gulv på badet.
-- Kjøkken: Rengjør oppvaskkum, benkeplater, komfyr/kokeplater, og alle andre kjøkkenapparater som har blitt brukt. Alt av bestikk og service skal være vasket og plassert tilbake i hyllene. Tøm søppelbøtten på kjøkkenet.
+        <article class="panel rules-panel">
+          <h3>Retningslinjer for bruk</h3>
 
-### Søppelhåndtering og kildesortering
-Vennligst bruk søppelbøttene som er tilgjengelige og sørg for å kildesortere avfallet i henhold til anvisningene fra BIR. Tøm søppelbøttene ved utsjekk.
+          <details open>
+            <summary>Før bruk</summary>
+            <div class="details-content">
+              <ul class="fact-list compact-list">
+                <li>Sjekk vær, vind og forhold på vannet før du drar ut</li>
+                <li>Ikke bruk paddleboardet dersom du oppdager skader eller mangler på utstyret</li>
+                <li>Avbryt turen dersom forholdene ikke føles trygge</li>
+              </ul>
+            </div>
+          </details>
 
-### Ansvar for skader
-Gjester er ansvarlige for eventuelle skader som oppstår i fellesområdet under leieperioden, utover det som anses som normal slitasje. Kostnader for reparasjon eller erstatning av skader som ikke er normal slitasje vil bli fakturert leietaker.
+          <details>
+            <summary>Under bruk</summary>
+            <div class="details-content">
+              <ul class="fact-list compact-list">
+                <li>Vis hensyn til andre som bruker området og vannet rundt</li>
+                <li>Ta godt vare på utstyret gjennom hele leieperioden</li>
+                <li>Følg bookingtiden slik at neste booking kan starte som planlagt</li>
+              </ul>
+            </div>
+          </details>
 
-### Personlige eiendeler
-Sameiet er ikke ansvarlig for personlige eiendeler som blir etterlatt i fellesområdet. Vennligst sørg for å ta med alle dine eiendeler når du forlater området.
+          <details>
+            <summary>Etter bruk</summary>
+            <div class="details-content">
+              <ul class="fact-list compact-list">
+                <li>Lever tilbake paddleboard og tilhørende utstyr på riktig plass</li>
+                <li>Tørk av eller skyll av utstyret ved behov</li>
+                <li>Meld fra om skader, mangler eller andre hendelser etter bruk</li>
+              </ul>
+            </div>
+          </details>
 
-### Brannsikkerhet
-Vennligst respekter brannsikkerhetsreglene. Ikke blokker rømningsveier og ikke manipuler brannalarmer. Enhver form for festrøyk til bruk innendørs er ikke tillatt da dette vil utløse brannalarmen.
+          <details>
+            <summary>Ansvar</summary>
+            <div class="details-content">
+              <p>Bruk skjer på eget ansvar. Sameiet er ikke ansvarlig for personlige eiendeler som tas med under bruk.</p>
+            </div>
+          </details>
+        </article>
+      </section>
+    </main>
 
-### Konsekvenser ved brudd på retningslinjer
-Ved brudd på disse retningslinjene kan det påløpe et gebyr på 1000 NOK. Ved gjentatte eller alvorlige brudd forbeholder vi oss retten til å suspendere bruken av fellesområdet.
+    <footer class="site-footer">
+      <p>Kuben Sameie</p>
+    </footer>
+  </div>
 
-### Nødnummer/kontaktperson
-Ved nødsituasjoner, nødnummer: Politi: 112, Brann: 110, Ambulanse: 113.
-Etter en eventuell nødsituasjon må det meldes inn til styret via BOB portalen. Eller mail til kuben@mittbob.no
-
-
-Vi setter stor pris på din hjelp til å holde fellesområdet rent og hyggelig for alle. Ved å følge disse retningslinjene bidrar du til et positivt miljø for alle som bruker området.
-  </script>
-
-  <!-- Include marked.js library from CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // 1. Get the Markdown text from the script tag
-      const markdownScript = document.getElementById('markdown-content');
-      const markdownText = markdownScript.textContent;
-
-      // 2. Get the target container
-      const rulesContainer = document.getElementById('rules-container');
-
-      // 3. Convert Markdown to HTML using marked.js
-      const htmlContent = marked.parse(markdownText);
-
-      // 4. Insert the HTML into the container
-      rulesContainer.innerHTML = htmlContent;
-
-      // Optionally remove the markdown script tag after processing (if you don't need it in the DOM)
-      // markdownScript.remove();
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // 1. Get the Markdown text from the script tag
-      const markdownScript = document.getElementById('markdown-content-info');
-      const markdownText = markdownScript.textContent;
-
-      // 2. Get the target container
-      const rulesContainer = document.getElementById('info-container');
-
-      // 3. Convert Markdown to HTML using marked.js
-      const htmlContent = marked.parse(markdownText);
-
-      // 4. Insert the HTML into the container
-      rulesContainer.innerHTML = htmlContent;
-    });
-  </script>
+  <!-- Lightbox overlays -->
+  <div id="lightbox-1" class="lightbox">
+    <a href="#!" class="lightbox-backdrop" aria-label="Lukk"></a>
+    <div class="lightbox-inner">
+      <img src="images/1.jpg" alt="Fellesrommet i Kuben Sameie, bilde 1">
+      <a href="#!" class="lightbox-close" aria-label="Lukk">&times;</a>
+    </div>
+  </div>
+  <div id="lightbox-2" class="lightbox">
+    <a href="#!" class="lightbox-backdrop" aria-label="Lukk"></a>
+    <div class="lightbox-inner">
+      <img src="images/2.jpg" alt="Fellesrommet i Kuben Sameie, bilde 2">
+      <a href="#!" class="lightbox-close" aria-label="Lukk">&times;</a>
+    </div>
+  </div>
+  <div id="lightbox-3" class="lightbox">
+    <a href="#!" class="lightbox-backdrop" aria-label="Lukk"></a>
+    <div class="lightbox-inner">
+      <img src="images/3.jpg" alt="Fellesrommet i Kuben Sameie, bilde 3">
+      <a href="#!" class="lightbox-close" aria-label="Lukk">&times;</a>
+    </div>
+  </div>
+  <div id="lightbox-4" class="lightbox">
+    <a href="#!" class="lightbox-backdrop" aria-label="Lukk"></a>
+    <div class="lightbox-inner">
+      <img src="images/4.jpg" alt="Fellesrommet i Kuben Sameie, bilde 4">
+      <a href="#!" class="lightbox-close" aria-label="Lukk">&times;</a>
+    </div>
+  </div>
+  <div id="lightbox-5" class="lightbox">
+    <a href="#!" class="lightbox-backdrop" aria-label="Lukk"></a>
+    <div class="lightbox-inner">
+      <img src="images/5.jpg" alt="Fellesrommet i Kuben Sameie, bilde 5">
+      <a href="#!" class="lightbox-close" aria-label="Lukk">&times;</a>
+    </div>
+  </div>
+  <div id="lightbox-6" class="lightbox">
+    <a href="#!" class="lightbox-backdrop" aria-label="Lukk"></a>
+    <div class="lightbox-inner">
+      <img src="images/6.jpg" alt="Fellesrommet i Kuben Sameie, bilde 6">
+      <a href="#!" class="lightbox-close" aria-label="Lukk">&times;</a>
+    </div>
+  </div>
+  <div id="lightbox-7" class="lightbox">
+    <a href="#!" class="lightbox-backdrop" aria-label="Lukk"></a>
+    <div class="lightbox-inner">
+      <img src="images/paddleboards.jpeg" alt="Paddleboards klare for utleie i Kuben Sameie">
+      <a href="#!" class="lightbox-close" aria-label="Lukk">&times;</a>
+    </div>
+  </div>
 </body>
 
 </html>
